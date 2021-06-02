@@ -1,0 +1,13 @@
+def ispalindrome(n):
+   rev=0
+   temp=n
+   while n:
+       r=n%10
+       n=n//10
+       rev=r+rev*10
+   if rev==temp:
+       return("True")
+   else:
+       return("False")
+n=int(input())
+print(ispalindrome(n))
